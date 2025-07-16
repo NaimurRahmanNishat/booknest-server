@@ -14,10 +14,11 @@ app.use(formData.parse());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://booknest-client-zy9d.vercel.app"],
+    origin: ['http://localhost:5173', 'https://booknest-client-zy9d.vercel.app'],
     credentials: true,
   })
 );
+app.use(cors());
 app.use(bodyParser.json({ limit: "20mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "20mb" }));
 app.use(cookieParser());
