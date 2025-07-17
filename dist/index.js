@@ -17,7 +17,7 @@ app.use(express_1.default.json());
 app.use(express_form_data_1.default.parse());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use((0, cors_1.default)({
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://booknest-client-zy9d.vercel.app"],
     credentials: true,
 }));
 app.use(body_parser_1.default.json({ limit: "20mb" }));
