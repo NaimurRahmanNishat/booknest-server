@@ -1,28 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "./dist/index.js",
+  "main": "api/index.ts",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only index.ts",
+    "dev": "ts-node-dev index.ts",
     "build": "tsc",
-    "start": "node ./dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/bcrypt": "^5.0.2",
-    "@types/cookie-parser": "^1.4.9",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
-    "@types/express-form-data": "^2.0.5",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^24.0.11",
-    "@types/nodemailer": "^6.4.17",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.8.3"
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
@@ -37,5 +20,17 @@
     "mongoose": "^8.16.2",
     "nodemailer": "^7.0.5",
     "stripe": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/express-form-data": "^2.0.5",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.0.11",
+    "@types/nodemailer": "^6.4.17",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
   }
 }
